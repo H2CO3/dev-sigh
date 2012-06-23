@@ -1,4 +1,4 @@
-This C99 program creates a readable FIFO on /dev/sigh. Anytime a read occurs on this FIFO, a random post from /dev/sigh is written to it.
+This C99 program creates a readable FIFO on /dev/sigh. Anytime a read occurs on this FIFO, a random post from devsigh.com is written to it.
 
 Compile with:
 	gcc -o sigh sigh.c -lcurl
