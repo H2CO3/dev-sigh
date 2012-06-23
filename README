@@ -1,0 +1,18 @@
+This C99 program creates a readable FIFO on /dev/sigh. Anytime a read occurs on this FIFO, a random post from /dev/sigh is written to it.
+
+Compile with:
+	gcc -o sigh sigh.c -lcurl
+
+Then run it using:
+	sudo ./sigh &
+
+From a terminal: type
+	cat /dev/sigh
+and laugh.
+
+Tested on Linux & iOS
+
+TODO: make this a kernel module. Execve()'ing oneself is not considered an elegant solution.
+
+Enjoy!
+
